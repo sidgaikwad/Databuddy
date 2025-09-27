@@ -41,7 +41,7 @@ bun run clickhouse:init # Initialize ClickHouse basket
 6. Build the SDK:
 
 ```bash
-bun sdk:build
+bun run sdk:build
 ```
 
 7. Start development servers:
@@ -53,14 +53,14 @@ bun run dev
 8. Seed the database with sample data (optional):
 
 ```bash
-bun db:seed <WEBSITE_ID> [DOMAIN] [EVENT_COUNT]
+bun run db:seed <WEBSITE_ID> [DOMAIN] [EVENT_COUNT]
 ```
 
 **Examples:**
 
 ```bash
-bun db:seed g0zlgMtBaXzIP1EGY2ieG onlybuddies.com 10000
-bun db:seed d7zlgMtBaSzIL1EGR2ieR notmybuddy.cc 5000
+bun run db:seed g0zlgMtBaXzIP1EGY2ieG onlybuddies.com 10000
+bun run db:seed d7zlgMtBaSzIL1EGR2ieR notmybuddy.cc 5000
 ```
 
 **Note:** You can find your website ID in your website overview settings.
